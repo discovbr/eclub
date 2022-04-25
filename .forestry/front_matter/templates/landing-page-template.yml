@@ -33,3 +33,8 @@ fields:
   label: Slider Images
   description: 'Upload area for the images in the slider. Rough dimensions: 600px
     wide/ 400px tall.'
+- name: green_bar_text
+  type: text
+  config:
+    required: false
+  label: Green Bar Text
