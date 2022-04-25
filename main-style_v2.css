@@ -440,6 +440,9 @@ i.fa.fa-sign-in, i.fa.fa-dollar {
 #tns1 {
     background: #ddd;
 }
+.tns-outer button {
+    display: none;
+}
 
 .includes-container {
   padding-bottom: 0 !important;
@@ -884,4 +887,3 @@ a {
     min-height: 280px;
   }
 }
-
