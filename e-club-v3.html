@@ -518,14 +518,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         });
     })
     // Form 
-    var slider = tns({
+   	var slider = tns({
       container: ".my-slider",
-      items: 5,
-      slideBy: "page",
+      items: 6,
+      slideBy: 3,
       mouseDrag: true,
       swipeAngle: false,
-      speed: 400,
-      controls: false,
+      autoplay: true,
+      autoplayHoverPause: true,
+      speed: 1000,
+      autoplayTimeout: 3000,
+      controls: true,
       nav: false,
     });
     //   Timer
