@@ -2,6 +2,12 @@
 label: Landing Page Template
 hide_body: false
 fields:
+- name: site_logo
+  type: file
+  config:
+    maxSize: 64
+  label: Site Logo
+  description: The site logo displayed in the top nav bar.
 - name: top_title
   type: text
   config:
