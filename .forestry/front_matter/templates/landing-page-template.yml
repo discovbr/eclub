@@ -21,3 +21,9 @@ fields:
   label: Header Background Image
   description: The main background image for the page. Update with image at least
     2400px wide.
+- name: slider_images
+  type: image_gallery
+  config: {}
+  label: Slider Images
+  description: 'Upload area for the images in the slider. Rough dimensions: 600px
+    wide/ 400px tall.'
