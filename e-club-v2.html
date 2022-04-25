@@ -15,6 +15,7 @@ slider_images:
 - images/slider-13.jpg
 site_logo: images/disc-branson-logo.png
 green_bar_text: Experience the best that Branson has to offer
+header_phone_image: images/dining-coupons.png
 
 ---
 <!doctype html>
@@ -53,6 +54,9 @@ green_bar_text: Experience the best that Branson has to offer
     }
     @media screen and (max-width: 767px) {
       .main-left-container { background-image: url('{{ page.header_background_image }}'); }
+    }
+    .product-device-image {
+      background-image: url('{{page.header_phone_image}}'); 
     }
   </style>
 
