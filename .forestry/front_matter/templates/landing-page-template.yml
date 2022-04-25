@@ -38,3 +38,4 @@ fields:
   config:
     required: false
   label: Green Bar Text
+  description: This text will auto-capitalize. Best with no punctuation.
