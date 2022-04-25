@@ -288,7 +288,8 @@ a.d-flex.align-items-center.text-dark.phone .convert-phone {
     min-width: 35px !important;
 }
 #countdownContainer {
-    display: inline-flex;
+  display: inline-flex;
+  padding: 0;
 }
 i.fas.fa-bolt {
     font-size: 1.4rem;
@@ -308,12 +309,11 @@ i.fa.fa-sign-in, i.fa.fa-dollar {
 #offerText {
   align-self: center;
   text-align: right;
-  min-width: 70%;
   font-size: 1.1rem;
 }
 #timeStack {
    display: grid;
-   width: 33%;
+  padding-left: 5px;
 }
 #bottomText {
    font-size: .7em;
@@ -327,6 +327,10 @@ i.fa.fa-sign-in, i.fa.fa-dollar {
 }
 .card-header {
     padding: 7px 1rem 5px;
+}
+.card-header-inner {
+    display: table;
+    margin: auto;
 }
 .card-title.pt-4 {
     padding-top: 2rem !important;
@@ -880,10 +884,4 @@ a {
     min-height: 280px;
   }
 }
-
-
-
-
-
-
 
