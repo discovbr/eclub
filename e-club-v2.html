@@ -1,5 +1,7 @@
 ---
-top_title: Branson <br> E-Club
+top_title: Branson<br>E-Club
+top_sub-title: Exclusive Deals & Discounts
+header_background_image: images/images/background-image.jpg
 
 ---
 <!doctype html>
@@ -31,6 +33,18 @@ top_title: Branson <br> E-Club
 
   <!-- Main Page Style -->
   <link href="main-style_v2.css" rel="stylesheet" />
+  
+  <style>
+    .product-device::before { 
+      background-image: url('{{ page.header_background_image }}'); 
+    }
+    .top-parent-container {
+  		background-image: url('{{ page.header_background_image }}');
+    }
+    @media screen and (max-width: 767px) {
+      .main-left-container { background-image: url('{{ page.header_background_image }}'); }
+    }
+  </style>
 
   <!-- Custom styles for this template -->
 </head>
