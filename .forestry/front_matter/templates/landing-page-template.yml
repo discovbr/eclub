@@ -14,11 +14,11 @@ fields:
     required: false
   label: Top Title
   description: The main title for the top header.
-- name: top_sub-title
+- name: header_sub_title
   type: text
   config:
     required: false
-  label: Top Sub-Title
+  label: Header Sub-Title
   description: The sub-title for the top header.
 - name: header_background_image
   type: file
