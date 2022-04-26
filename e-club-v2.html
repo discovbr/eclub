@@ -53,6 +53,8 @@ header_bullets:
   bullet_item_5: INSIDER INFO & MORE
 header_sub_title: Exclusive Deals & Discounts
 header_title: Branson<br>E-Club
+seconds_between_slides: 3
+slider_speed: 10
 
 ---
 <!doctype html>
@@ -535,8 +537,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       swipeAngle: false,
       autoplay: true,
       autoplayHoverPause: true,
-      speed: 1000,
-      autoplayTimeout: 3000,
+      speed: {{page.slider_speed}}00,
+      autoplayTimeout: {{page.seconds_between_slides}}000,
       controls: true,
       nav: false,
     });
