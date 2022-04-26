@@ -27,6 +27,36 @@ fields:
   label: Header Background Image
   description: The main background image for the page. Update with image at least
     2400px wide.
+- name: header_bullets
+  type: field_group
+  config: {}
+  fields:
+  - name: bullet_item_1
+    type: text
+    config:
+      required: false
+    label: Bullet Item 1
+  - name: bullet_item_2
+    type: text
+    config:
+      required: false
+    label: Bullet Item 2
+  - name: bullet_item_3
+    type: text
+    config:
+      required: false
+    label: Bullet Item 3
+  - name: bullet_item_4
+    type: text
+    config:
+      required: false
+    label: Bullet Item 4
+  - name: bullet_item_5
+    type: text
+    config:
+      required: false
+    label: Bullet Item 5
+  label: Header Bullets
 - name: header_phone_image
   type: file
   config:
