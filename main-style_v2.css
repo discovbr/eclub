@@ -364,8 +364,11 @@ a#hiddenTermsLink {
   background: #fff;
   width: 90%;
   max-width: 800px;
+  max-height: 75%;
+  overflow: scroll;
   padding: 25px;
   margin: auto;
+  font-size: 14px;
 }
 .tos-pop-inner h3 {
   text-align: center;
@@ -943,3 +946,5 @@ background-color: #0C5EA5 !important;
     min-height: 280px;
   }
 }
+
+
