@@ -361,14 +361,23 @@ a#hiddenTermsLink {
   z-index: 1000;
 }
 .tos-pop-inner {
-  background: #fff;
-  width: 90%;
-  max-width: 800px;
-  max-height: 75%;
-  overflow: scroll;
-  padding: 25px;
-  margin: auto;
-  font-size: 14px;
+    background: #fff;
+    width: 90%;
+    max-width: 800px;
+    max-height: 75%;
+    overflow: scroll;
+    padding: 10px 15px;
+    margin: auto;
+    font-size: 14px;
+    position: relative;
+}
+i.fa.fa-close { 
+  position: fixed;
+  font-size: 30px;
+  cursor: pointer;
+}
+.parent-container {
+    padding: 25px 35px;
 }
 .tos-pop-inner h3 {
   text-align: center;
@@ -946,5 +955,3 @@ background-color: #0C5EA5 !important;
     min-height: 280px;
   }
 }
-
-
