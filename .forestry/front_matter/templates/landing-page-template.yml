@@ -69,5 +69,11 @@ fields:
       schema:
         format: markdown
     label: Feature Item One Description
+  - name: feature_item_one_button_text
+    type: text
+    config:
+      required: false
+    label: Feature Item One Button Text
+    description: Brief text for the button.
   label: Feature Item One
   description: For the left feature box directly under the header.
