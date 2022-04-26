@@ -16,6 +16,14 @@ slider_images:
 site_logo: images/disc-branson-logo.png
 green_bar_text: Experience the best that Branson has to offer
 header_phone_image: images/dining-coupons.png
+header_title: Branson<br>E-Club
+header_sub_title: Exclusive Deals & Discounts
+header_bullets:
+  bullet_item_1: INSTANT BRANSON COUPONS
+  bullet_item_2: GAS DISCOUNTS
+  bullet_item_3: BRANSON TRAVEL GUIDES
+  bullet_item_4: MEMBER ONLY PRICES
+  bullet_item_5: INSIDER INFO & MORE
 
 ---
 <!doctype html>
@@ -85,13 +93,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="col-12 col-md-6 col-lg-7 position-relative main-left-container">
             <div id="mobileViewOverlay"></div>
             <div class="my-3 py-3 position-relative custom-shadow" style="z-index:9;">
-              <div id="topTitleText" class="display-1 fw-bold text-uppercase text-white custom-shadow px-2">BRANSON<br/>E-CLUB</div>
-              <div class="h3 text-white text-uppercase custom-shadow pt-2 pb-3 px-2">Exclusive Deals &amp; Discounts</div>
+              <div id="topTitleText" class="display-1 fw-bold text-uppercase text-white custom-shadow px-2">{{ page.header_title }}</div>
+              <div class="h3 text-white text-uppercase custom-shadow pt-2 pb-3 px-2">{{ page.header_sub_title }}</div>
               <ul id="header-extra-bullets">
-                <li>INSTANT BRANSON COUPONS</li><li>GAS DISCOUNTS</li><li>BRANSON TRAVEL GUIDES</li><li>MEMBER ONLY PRICES</li><li>INSIDER INFO &amp; MORE</li>
+                <li>{{page.header_bullets.bullet_item_1}}</li><li>{{page.header_bullets.bullet_item_2}}</li><li>{{page.header_bullets.bullet_item_3}}</li><li>{{page.header_bullets.bullet_item_4}}</li><li>{{page.header_bullets.bullet_item_5}}</li>
               </ul>
               <p class="mobile-only-list">
-                  INSTANT BRANSON COUPONS | GAS DISCOUNTS | BRANSON TRAVEL GUIDES | MEMBER ONLY PRICES
+                  {{page.header_bullets.bullet_item_1}} | {{page.header_bullets.bullet_item_2}} | {{page.header_bullets.bullet_item_3}} | {{page.header_bullets.bullet_item_4}}
               </p>
             </div>
             <div class="product-device-outer">
