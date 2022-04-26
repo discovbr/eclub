@@ -174,7 +174,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                     <div id="agreementContainer" class="mb-3">
                       <input type="checkbox" id="agreement" name="agreement" required/>
-                      <label id="agreementLabel" for="agreement" class="text-center">I agree to let Discover Branson use my data</label>
+                      <label id="agreementLabel" for="agreement" class="text-center">I agree to the <a id="hiddenTermsLink" href="javascript:termsPop()">Terms of Service</a></label>
                     </div>
                     <div class="w-100 px-3">
                       <button type="submit" class="btn btn-primary w-100 rounded-pill submit-button">JOIN NOW</button>
@@ -363,6 +363,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
   </a>
+  <div class="tos-pop">
+    <div class="tos-pop-inner">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis finibus nulla, nec dignissim erat. Maecenas tristique nisi felis, sit amet blandit quam suscipit et. In eu vestibulum est. Ut interdum fringilla elit, et ullamcorper ligula tempus malesuada. Fusce ut eleifend metus. Maecenas vitae tempus sapien. Pellentesque in est imperdiet, tempor nisl et, fringilla enim. Aliquam id ipsum massa.
+      </p>
+      <div onclick="closeTOS()" class="tos-back-button">
+        Back
+      </div>
+    </div>
+  </div>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
@@ -654,6 +664,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         'https://connect.facebook.net/en_US/fbevents.js');
       fbq('init', '1033924800538096');
       fbq('track', 'PageView');
+    }
+    
+    function termsPop() {
+      document.querySelector(".tos-pop").style.display = "flex";
+    }
+    function closeTOS() {
+      document.querySelector(".tos-pop").style.display = "none";
     }
 
     window.onload = function() {
