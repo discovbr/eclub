@@ -8,12 +8,12 @@ fields:
     maxSize: 64
   label: Site Logo
   description: The site logo displayed in the top nav bar.
-- name: top_title
+- name: header_title
   type: text
   config:
     required: false
-  label: Top Title
-  description: The main title for the top header.
+  label: Header Title
+  description: The main title for the header.
 - name: header_sub_title
   type: text
   config:
