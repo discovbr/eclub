@@ -45,3 +45,29 @@ fields:
     required: false
   label: Green Bar Text
   description: This text will auto-capitalize. Best with no punctuation.
+- name: feature_item_one
+  type: field_group
+  config: {}
+  fields:
+  - name: feature_item_one_image
+    type: file
+    config:
+      maxSize: 64
+    label: Feature Item One Image
+    description: Should be square dimensions.
+  - name: feature_item_one_header
+    type: text
+    config:
+      required: false
+    label: Feature Item One Header
+  - name: feature_item_one_description
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Feature Item One Description
+  label: Feature Item One
+  description: For the left feature box directly under the header.
