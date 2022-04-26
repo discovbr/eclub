@@ -45,6 +45,12 @@ feature_container:
       packages and group rates. Make the most of your stay in Branson with insider
       information.
     feature_item_button_text: Join Now
+header_bullets:
+  bullet_item_1: INSTANT BRANSON COUPONS
+  bullet_item_2: GAS DISCOUNTS
+  bullet_item_3: BRANSON TRAVEL GUIDES
+  bullet_item_4: MEMBER ONLY PRICES
+  bullet_item_5: INSIDER INFO & MORE
 
 ---
 <!doctype html>
@@ -117,10 +123,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <div id="topTitleText" class="display-1 fw-bold text-uppercase text-white custom-shadow px-2">{{ page.top_title }}</div>
               <div class="h3 text-white text-uppercase custom-shadow pt-2 pb-3 px-2">Exclusive Deals &amp; Discounts</div>
               <ul id="header-extra-bullets">
-                <li>INSTANT BRANSON COUPONS</li><li>GAS DISCOUNTS</li><li>BRANSON TRAVEL GUIDES</li><li>MEMBER ONLY PRICES</li><li>INSIDER INFO &amp; MORE</li>
+                <li>{{page.header_bullets.bullet_item_1}}</li><li>{{page.header_bullets.bullet_item_2}}</li><li>{{page.header_bullets.bullet_item_3}}</li><li>{{page.header_bullets.bullet_item_4}}</li><li>{{page.header_bullets.bullet_item_5}}</li>
               </ul>
               <p class="mobile-only-list">
-                  INSTANT BRANSON COUPONS | GAS DISCOUNTS | BRANSON TRAVEL GUIDES | MEMBER ONLY PRICES
+                  {{page.header_bullets.bullet_item_1}} | {{page.header_bullets.bullet_item_2}} | {{page.header_bullets.bullet_item_3}} | {{page.header_bullets.bullet_item_4}}
               </p>
             </div>
             <div class="product-device-outer">
