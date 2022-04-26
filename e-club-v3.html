@@ -366,6 +366,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         scrollFunction();
       });
     });
+    
+     setTimeout( function() {
+        document.querySelectorAll(".event-card-custom").forEach(button => {
+          button.addEventListener('click', function handleClick(event) {
+            scrollFunction();
+          });
+        });
+      }, 1000);
 
     // Message Handler 
     const message_success = document.getElementById('message-success');
