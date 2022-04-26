@@ -80,5 +80,67 @@ fields:
       label: Feature Item Button Text
     label: Feature Item One
     description: Left feature item
+  - name: feature_item_two
+    type: field_group
+    config: {}
+    fields:
+    - name: feature_item_image
+      type: file
+      config:
+        maxSize: 64
+      label: Feature Item Image
+      description: Should be square dimensions.
+    - name: feature_item_header
+      type: text
+      config:
+        required: false
+      label: Feature Item Header
+    - name: feature_item_description
+      type: textarea
+      default: ''
+      config:
+        required: false
+        wysiwyg: false
+        schema:
+          format: markdown
+      label: Feature Item Description
+    - name: feature_item_button_text
+      type: text
+      config:
+        required: false
+      label: Feature Item Button Text
+    label: Feature Item Two
+    description: Center feature item.
+  - name: feature_item_three
+    type: field_group
+    config: {}
+    fields:
+    - name: feature_item_image
+      type: file
+      config:
+        maxSize: 64
+      label: Feature Item Image
+      description: Should be square dimensions.
+    - name: feature_item_header
+      type: text
+      config:
+        required: false
+      label: Feature Item Header
+    - name: feature_item_description
+      type: textarea
+      default: ''
+      config:
+        required: false
+        wysiwyg: false
+        schema:
+          format: markdown
+      label: Feature Item Description
+    - name: feature_item_button_text
+      type: text
+      config:
+        required: false
+      label: Feature Item Button Text
+    label: Feature Item Three
+    description: Right feature item.
   label: Feature Container
   description: The three feature area below the header.
