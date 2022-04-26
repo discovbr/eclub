@@ -357,14 +357,16 @@ a#hiddenTermsLink {
   top: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(25,25,25,.7);
+  background: rgba(25,25,25,.75);
   z-index: 1000;
 }
 .tos-pop-inner {
   background: #fff;
-  width: 50%;
+  width: 90%;
+  max-width: 600px;
   padding: 25px;
   margin: auto;
+  text-align: center;
 }
 .tos-back-button {
   width: 80px;
