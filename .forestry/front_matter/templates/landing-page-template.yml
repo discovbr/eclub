@@ -45,35 +45,40 @@ fields:
     required: false
   label: Green Bar Text
   description: This text will auto-capitalize. Best with no punctuation.
-- name: feature_item_one
+- name: feature_container
   type: field_group
   config: {}
   fields:
-  - name: feature_item_one_image
-    type: file
-    config:
-      maxSize: 64
-    label: Feature Item One Image
-    description: Should be square dimensions.
-  - name: feature_item_one_header
-    type: text
-    config:
-      required: false
-    label: Feature Item One Header
-  - name: feature_item_one_description
-    type: textarea
-    default: ''
-    config:
-      required: false
-      wysiwyg: false
-      schema:
-        format: markdown
-    label: Feature Item One Description
-  - name: feature_item_one_button_text
-    type: text
-    config:
-      required: false
-    label: Feature Item One Button Text
-    description: Brief text for the button.
-  label: Feature Item One
-  description: For the left feature box directly under the header.
+  - name: feature_item_one
+    type: field_group
+    config: {}
+    fields:
+    - name: feature_item_image
+      type: file
+      config:
+        maxSize: 64
+      label: Feature Item Image
+      description: Should be square dimensions.
+    - name: feature_item_header
+      type: text
+      config:
+        required: false
+      label: Feature Item Header
+    - name: feature_item_description
+      type: textarea
+      default: ''
+      config:
+        required: false
+        wysiwyg: false
+        schema:
+          format: markdown
+      label: Feature Item Description
+    - name: feature_item_button_text
+      type: text
+      config:
+        required: false
+      label: Feature Item Button Text
+    label: Feature Item One
+    description: Left feature item
+  label: Feature Container
+  description: The three feature area below the header.
