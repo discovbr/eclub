@@ -363,9 +363,11 @@ a#hiddenTermsLink {
 .tos-pop-inner {
   background: #fff;
   width: 90%;
-  max-width: 600px;
+  max-width: 800px;
   padding: 25px;
   margin: auto;
+}
+.tos-pop-inner h3 {
   text-align: center;
 }
 .tos-back-button {
@@ -591,7 +593,7 @@ background-color: #0C5EA5 !important;
 }
 .custom-event-button {
   position: relative;
-  top: -10px;
+  top: -5px;
   right: 5px;
   background-color: #0275d8 !important;
   border: transparent;
@@ -815,7 +817,7 @@ background-color: #0C5EA5 !important;
 /* New feature */
 
 #event-showcase {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: auto;
   background: #fff;
 }
