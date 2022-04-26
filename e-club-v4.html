@@ -29,6 +29,8 @@
   <link href="main-style_v2.css" rel="stylesheet" />
 
   <!-- Custom styles for this template -->
+  <!--  Lucky Orange  -->
+  <script async defer src="https://tools.luckyorange.com/core/lo.js?site-id=8e1c2e34"></script>
 </head>
 
 <body>
@@ -117,8 +119,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="w-100 px-3">
                       <button type="submit" class="btn btn-primary w-100 rounded-pill submit-button">JOIN NOW</button>
                     </div>
-                     <div class="container-fluid text-center pt-4 d-flex flex-column justify-content-evenly align-items-center">
-                        <img class="" src="./images/bbb-a.png" alt="..." style="width: 150px;" />
+                    <div class="container-fluid text-center pt-4 d-flex flex-column justify-content-evenly align-items-center">
+                        <img class="" src="./images/bbb-a.png" alt="..." style="width: 200px;" />
                     </div>
                   </form>
                   <div class="loading d-none">Loading&#8230;</div>
@@ -262,9 +264,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
     </div>
-
   </main>
-  
+  <div id="event-showcase">
+    <div class="vc_row wpb_row vc_inner">
+      <div class="wpb_column column_container col-md-12">
+        <div class="vc_column-inner">
+          <div class="wpb_wrapper"><h2 style="text-align: center;margin-bottom: 20px;" class="vc_custom_heading">E-Club Member Ticket Deals</h2></div>
+            <div class="wpb_text_column wpb_content_element ">
+              <div class="wpb_wrapper" id="cardsInsert">
+                
+              </div>              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
    <div id="pageFooter" class="footer pt-5 pb-5">
     <div class="footer-inner">
       <p>
@@ -317,6 +332,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       google();
       facebook();
       formHeight = document.getElementById('mainForm').clientHeight;
+      getCards();
     });
 
     document.querySelectorAll(".scroll-button").forEach(button => {
@@ -324,7 +340,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         scrollFunction();
       });
     });
-
+    setTimeout( function() {
+        document.querySelectorAll(".event-card-custom").forEach(button => {
+          button.addEventListener('click', function handleClick(event) {
+            scrollFunction();
+          });
+        });
+      }, 1000);
+    
     // Message Handler 
     const message_success = document.getElementById('message-success');
     const message_error = document.getElementById('message-error');
@@ -350,6 +373,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       //console.log(formHeight);
       document.getElementById("mainForm").style.height = formHeight + "px";
     }
+    
+    const getCards = () => {
+      const container = document.getElementById('cardsInsert');
+      fetch("./cards/cards.json")
+      .then(response => response.json())
+      .then(json => {
+        json.cards.forEach(card => {
+        container.innerHTML += `
+            <div class="card event-card-custom" style="background-image:url(${card.img});">
+                <div class="container custom-event-card-body">
+                  <div class="custom-event-card-body-inner">
+                    <p class="event-title">${card.title}</p>
+                    <div class="custom-direction">
+                       <div class="event-info-box">
+                            <p class="event-info-price">${card.price}</p>
+                            <p class="event-info-time">${card.time}</p>&nbsp;&#8226;&nbsp;
+                            <p class="event-info-time">${card.age}</p>
+                       </div>                  
+                      <button class="btn btn-primary custom-event-button" onclick="scrollFunction()">Book</button> 
+                    </div>
+                  </div>                             
+                </div>                  
+            </div>  
+      `;
+      })
+      });    
+    };
 
     const getDeviceType = () => {
       const ua = navigator.userAgent;
