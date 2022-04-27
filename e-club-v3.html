@@ -94,6 +94,18 @@ seconds_between_slides: 3
 
   <!-- Main Page Style -->
   <link href="main-style_v2.css" rel="stylesheet" />
+  
+  <style>
+    .top-parent-container {
+  		background-image: url('{{ page.header_background_image }}');
+    }
+    .product-device-image {
+      background-image: url('{{page.header_phone_image}}'); 
+    }
+    @media screen and (max-width: 767px) {
+      .main-left-container { background-image: url('{{ page.header_background_image }}'); }
+    }
+  </style>
 
   <!-- Custom styles for this template -->
   <!--  Lucky Orange  -->
