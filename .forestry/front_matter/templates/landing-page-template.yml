@@ -195,5 +195,3 @@ fields:
     max: 6
     step: 1
   label: Seconds Between Slides
-pages:
-- test.html
