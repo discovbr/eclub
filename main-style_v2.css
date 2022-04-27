@@ -511,13 +511,6 @@ i.fa.fa-close {
     margin: auto;
 }
 
-.top-parent-container {
-  background-image: url('images/background-image.jpg');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .card-top-circle {
   width: 150px;
   height: 150px;
@@ -839,6 +832,14 @@ background-color: #0C5EA5 !important;
   .product-device-image { bottom: -24.5%; }
 }
 
+@media screen and (min-width: 768px) {
+  .top-parent-container {
+    background-image: url('images/background-image.webp');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
 @media screen and (max-width: 767px) {
   #header-extra-bullets {
     list-style: none;
@@ -877,7 +878,7 @@ background-color: #0C5EA5 !important;
     display: flex;
     text-align: center;
     min-height: 350px;
-    background-image: url(images/background-image.jpg);
+    background-image: url(images/background-image-mobile.webp);
     background-size: cover;
     background-repeat: no-repeat;
     padding: 0;
