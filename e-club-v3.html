@@ -96,11 +96,13 @@ seconds_between_slides: 3
   <link href="main-style_v2.css" rel="stylesheet" />
   
   <style>
-    .top-parent-container {
-  		background-image: url('{{ page.header_background_image }}');
-    }
     .product-device-image {
       background-image: url('{{page.header_phone_image}}'); 
+    }
+    @media screen and (min-width: 768px) {
+       .top-parent-container {
+  		 background-image: url('{{ page.header_background_image }}');
+       }
     }
     @media screen and (max-width: 767px) {
       .main-left-container { background-image: url('{{ page.header_background_image }}'); }
@@ -121,7 +123,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <header class="site-header py-2">
     <nav class="container d-flex flex-column flex-md-row justify-content-between align-content-center">
-      <img style="width: 200px" src="./images/disc-branson-logo.png" alt="Discover Branson Logo" />
+      <img style="width: 200px" src="{{ page.site_logo }}" alt="Discover Branson Logo" />
       <a class="d-flex align-items-center text-dark phone" href="tel:888888888">Questions? &nbsp;<i class="fa-solid fa-phone"></i><span class="convert-phone">(888) 888-8888</span></a>
     </nav>
 
@@ -134,13 +136,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="col-12 col-md-6 col-lg-7 position-relative main-left-container">
             <div id="mobileViewOverlay"></div>
             <div class="my-3 py-3 position-relative custom-shadow" style="z-index:9;">
-              <div id="topTitleText" class="display-1 fw-bold text-uppercase text-white custom-shadow px-2">BRANSON<br/>E-CLUB</div>
-              <div class="h3 text-white text-uppercase custom-shadow pt-2 pb-3 px-2">Exclusive Deals &amp; Discounts</div>
+              <div id="topTitleText" class="display-1 fw-bold text-uppercase text-white custom-shadow px-2">{{ page.header_title }}</div>
+              <div class="h3 text-white text-uppercase custom-shadow pt-2 pb-3 px-2">{{ page.header_sub_title }}</div>
               <ul id="header-extra-bullets">
-                <li>INSTANT BRANSON COUPONS</li><li>GAS DISCOUNTS</li><li>BRANSON TRAVEL GUIDES</li><li>MEMBER ONLY PRICES</li><li>INSIDER INFO &amp; MORE</li>
+                <li>{{page.header_bullets.bullet_item_1}}</li><li>{{page.header_bullets.bullet_item_2}}</li><li>{{page.header_bullets.bullet_item_3}}</li><li>{{page.header_bullets.bullet_item_4}}</li><li>{{page.header_bullets.bullet_item_5}}</li>
               </ul>
               <p class="mobile-only-list">
-                  INSTANT BRANSON COUPONS | GAS DISCOUNTS | BRANSON TRAVEL GUIDES | MEMBER ONLY PRICES
+                  {{page.header_bullets.bullet_item_1}} | {{page.header_bullets.bullet_item_2}} | {{page.header_bullets.bullet_item_3}} | {{page.header_bullets.bullet_item_4}}
               </p>
             </div>
             <div class="product-device-outer">
