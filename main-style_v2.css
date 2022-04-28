@@ -781,6 +781,7 @@ background-color: #0C5EA5 !important;
   font-size: 10px;
   width: 1em;
   height: 1em;
+  margin-top: 1em;
   -webkit-animation: spinner 1500ms infinite linear;
   -moz-animation: spinner 1500ms infinite linear;
   -ms-animation: spinner 1500ms infinite linear;
