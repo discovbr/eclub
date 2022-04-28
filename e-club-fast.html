@@ -88,7 +88,7 @@ title: e-club-fast
   <!-- Bootstrap core CSS -->
   <link href="bootstrap-core.css" rel="stylesheet" />
 
-<!--   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- Favicons -->
   <meta name="theme-color" content="#7952b3">
@@ -553,7 +553,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       formHeight = document.getElementById('mainForm').clientHeight;
       setTimeout(function(){
         getCards();
-      }, 4000)
+      }, 3000)
     });
 
     document.querySelectorAll(".scroll-button").forEach(button => {
@@ -651,14 +651,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     // Form 
     var slider = tns({
       container: ".my-slider",
-      items: 6,
+      items: 5,
+      slideBy: "page",
       mouseDrag: true,
       swipeAngle: false,
-       autoplay: false,
-//       autoplayHoverPause: true,
-      //speed: 1000,
-//       autoplayTimeout: 3000,
-      controls: true,
+      speed: 400,
+      controls: false,
       nav: false,
     });
    
