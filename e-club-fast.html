@@ -555,11 +555,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       google();
       facebook();
       formHeight = document.getElementById('mainForm').clientHeight;
-      {% if page.attraction_cards_on_off %}
-      setTimeout(function(){
-        getCards();
-      }, 4000);
-      {% endif %}
+      var cardEle =  document.getElementById('cardsInsert');
+      if (typeof(cardEle) != 'undefined' && cardEle != null) {
+        setTimeout(function(){
+          getCards();
+        }, 4000);
+      } 
     });
 
     document.querySelectorAll(".scroll-button").forEach(button => {
