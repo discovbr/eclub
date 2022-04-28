@@ -302,3 +302,14 @@ fields:
   type: boolean
   label: Attraction Cards On/Off
   description: Use this to toggle the attraction card area on and off.
+- name: facebook_pixel_id
+  type: number
+  label: Facebook Pixel ID
+  description: Enter the Facebook Pixel ID (number string). This will update the tracking
+    pixel on the page.
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
