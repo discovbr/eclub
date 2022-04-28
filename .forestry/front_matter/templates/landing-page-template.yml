@@ -27,6 +27,13 @@ fields:
   label: Header Background Image
   description: The main background image for the page. Update with image at least
     2400px wide.
+- name: mobile_background_image
+  type: file
+  config:
+    maxSize: 64
+  label: Mobile Background Image
+  description: This will override the desktop background image. This should be at
+    least 767px wide.
 - name: header_bullets
   type: field_group
   config: {}
