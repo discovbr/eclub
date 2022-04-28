@@ -230,7 +230,7 @@ fields:
       config:
         required: false
       label: Button Text
-    label: Stackable Content Area One
+    label: Stackable Content Block One
     description: The top content block
   - name: repeatable_stack
     type: field_group_list
