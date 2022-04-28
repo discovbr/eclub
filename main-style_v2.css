@@ -754,7 +754,7 @@ background-color: #0C5EA5 !important;
 .loading-deals {
   position: initial;
   z-index: 999;
-  height: 30px;
+  height: 35px;
   width: 2em;
   overflow: show;
   margin: auto;
