@@ -186,6 +186,13 @@ fields:
     description: Right feature item.
   label: Feature Container
   description: The three feature area below the header.
+- name: between_feature_text
+  type: text
+  config:
+    required: false
+  label: Between Feature Text
+  description: For the line of text that is between the three feature and the stackable
+    content areas.
 - name: attraction_cards_on_off
   type: boolean
   label: Attraction Cards On/Off
