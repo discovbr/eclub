@@ -47,6 +47,8 @@ feature_container:
       information.
     feature_item_button_text: Join Now
 attraction_cards_on_off: true
+savings_text_area: Average member savings of over $217 per visit
+membership_includes_text: 'Branson E-Club Lifetime Membership Includes:'
 
 ---
 <!doctype html>
@@ -236,10 +238,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
     
     <div id="mainBodyTop" class="container-fluid text-center pt-5 pb-1 d-flex flex-column justify-content-evenly align-items-center">
-      <h4>Average member savings of over $217 per visit</h4>
+      <h4>{{ page.savings_text_area }}</h4>
     </div>
      <div class="container-fluid bg-white text-center pt-2 pb-3 mb-5">
-      <div class="h3 mb-0 font-weight-bold">Branson E-Club Lifetime Membership Includes:</div>
+      <div class="h3 mb-0 font-weight-bold">{{ page.membership_includes_text }}</div>
     </div>
 
     <div class="container-fluid pt-5" style="max-width:1140px;">
