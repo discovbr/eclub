@@ -174,3 +174,7 @@ fields:
     description: Right feature item.
   label: Feature Container
   description: The three feature area below the header.
+- name: attraction_cards_on_off
+  type: boolean
+  label: Attraction Cards On/Off
+  description: Use this to toggle the attraction card area on and off.
