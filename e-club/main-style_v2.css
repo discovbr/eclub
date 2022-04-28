@@ -186,7 +186,7 @@
   bottom: -41%;
   width: 300px;
   height: 540px;
-  background: url(images/iphone.png);
+  background: url(../images/iphone.png);
   background-size: 100% 100%;
   position: absolute;
   z-index: 1;
@@ -212,7 +212,7 @@
   width: 271px;
   height: 410px;
   border-radius: 5px;
-  background-image: url(images/dining-coupons.png);
+  background-image: url(../images/dining-coupons.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -883,7 +883,7 @@ background-color: #0C5EA5 !important;
 
 @media screen and (min-width: 768px) {
   .top-parent-container {
-    background-image: url('images/background-image.webp');
+    background-image: url('../images/background-image.webp');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -927,7 +927,7 @@ background-color: #0C5EA5 !important;
     display: flex;
     text-align: center;
     min-height: 350px;
-    background-image: url(images/background-image-mobile.webp);
+    background-image: url(../images/background-image-mobile.webp);
     background-size: cover;
     background-repeat: no-repeat;
     padding: 0;
