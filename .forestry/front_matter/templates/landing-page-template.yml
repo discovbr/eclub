@@ -184,7 +184,7 @@ fields:
       label: Feature Item Button Text
     label: Feature Item Three
     description: Right feature item.
-  label: Feature Container
+  label: Three Feature Container
   description: The three feature area below the header.
 - name: between_feature_text
   type: text
