@@ -334,14 +334,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
 	  {% for newsection in page.stackable_content_area %}
       <div class="d-md-flex flex-md-equal w-100">
-        <div class="bg-primary bg-image-style" data-src="{{newsection.stackable_content_image_left.stackable_content_image}}">
+        <div class="bg-primary bg-image-style" data-src="{{newsection.stackable_section_image_left.stackable_content_image}}">
 
         </div>
         <div class="bg-light">
           <div class="h-100 p-4 p-md-5">
-            <div class="h2 fw-bold">{{newsection.stackable_content_image_left.content_area_title}}</div>
-            <div class="h5 text-muted">{{newsection.stackable_content_image_left.content_area_description}}</div>
-            <button type="button" class="scroll-button btn btn-lg btn-primary text-uppercase text-white mt-4 fw-bold"><i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp;&nbsp;{{newsection.stackable_content_image_left.button_text}}</button>
+            <div class="h2 fw-bold">{{newsection.stackable_section_image_left.content_area_title}}</div>
+            <div class="h5 text-muted">{{newsection.stackable_section_image_left.content_area_description}}</div>
+            <button type="button" class="scroll-button btn btn-lg btn-primary text-uppercase text-white mt-4 fw-bold"><i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp;&nbsp;{{newsection.stackable_section_image_left.button_text}}</button>
           </div>
         </div>
       </div>
@@ -349,12 +349,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="d-md-flex flex-md-equal w-100 mobile-inverted-box">
         <div class="bg-light">
           <div class="h-100 p-4 p-md-5">
-            <div class="h2 fw-bold">{{newsection.stackable_content_image_right.content_area_title}}</div>
-            <div class="h5 text-muted">{{newsection.stackable_content_image_right.content_area_description}}</div>
-            <button type="button" class="scroll-button btn btn-lg btn-primary text-uppercase text-white mt-4 fw-bold"><i class='fa fa-dollar'></i> {{newsection.stackable_content_image_right.button_text}}</button>
+            <div class="h2 fw-bold">{{newsection.stackable_section_image_right.content_area_title}}</div>
+            <div class="h5 text-muted">{{newsection.stackable_section_image_right.content_area_description}}</div>
+            <button type="button" class="scroll-button btn btn-lg btn-primary text-uppercase text-white mt-4 fw-bold"><i class='fa fa-dollar'></i> {{newsection.stackable_section_image_right.button_text}}</button>
           </div>
         </div>
-        <div class="bg-primary bg-image-style" data-src="{{newsection.stackable_content_image_right.stackable_content_image}}">
+        <div class="bg-primary bg-image-style" data-src="{{newsection.stackable_section_image_right.stackable_content_image}}">
           <!-- <div class="bg-primary bg-image-style"><img src="img-2.jpg" class="w-100" alt=""></div> -->
         </div>
       </div>
