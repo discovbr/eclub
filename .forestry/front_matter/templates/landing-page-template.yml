@@ -193,10 +193,6 @@ fields:
   label: Between Feature Text
   description: For the line of text that is between the three feature and the stackable
     content areas.
-- name: attraction_cards_on_off
-  type: boolean
-  label: Attraction Cards On/Off
-  description: Use this to toggle the attraction card area on and off.
 - name: stackable_content_area
   type: field_group
   config: {}
@@ -302,3 +298,7 @@ fields:
   label: Stackable Content Area
   description: For the stackable content block with the left/right image and text
     area.
+- name: attraction_cards_on_off
+  type: boolean
+  label: Attraction Cards On/Off
+  description: Use this to toggle the attraction card area on and off.
