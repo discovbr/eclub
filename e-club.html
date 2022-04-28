@@ -332,7 +332,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="bg-primary bg-image-style" data-src="{{ page.stackable_content_area.stackable_content_block_one.stackable_content_image }}">
         </div>
       </div>
-	  {% for newsection in page.stackable_content_area %}
+	  {% for newsection in page.stackable_content_area.repeatable_stack %}
       <div class="d-md-flex flex-md-equal w-100">
         <div class="bg-primary bg-image-style" data-src="{{newsection.stackable_section_image_left.stackable_content_image}}">
 
