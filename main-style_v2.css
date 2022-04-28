@@ -71,6 +71,10 @@
     max-width: 250px;
 }
 
+.bg-primary {
+    background-color: #d2d2d2!important;
+}
+
 /*
        * Custom translucent site header
        */
