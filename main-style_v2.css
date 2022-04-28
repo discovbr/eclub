@@ -679,8 +679,9 @@ background-color: #0C5EA5 !important;
 }
 .mobile-only-list { 
   display: none; 
-  color: #fff;
-  text-shadow: 1px 1px 3px #000;
+  color: #f7cb47;
+  font-weight: bold;
+  text-shadow: 1px 1px 6px #000;
   margin: 0;
   letter-spacing: 1.5px;
   padding: 5px 10px;
