@@ -750,11 +750,13 @@ background-color: #0C5EA5 !important;
 #loadingDealsContainer {
     text-align: center;
 }
-
+#loadingDealsContainer p {
+  margin-bottom: 10px; 
+}
 .loading-deals {
   position: initial;
   z-index: 999;
-  height: 35px;
+  height: 48px;
   width: 2em;
   overflow: show;
   margin: auto;
