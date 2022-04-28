@@ -512,7 +512,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       .then(response => response.json())
       .then(json => {
         json.cards.forEach(card => {
-        container.innerHTML += `
+        container.innerHTML = `
             <div class="card event-card-custom" style="background-image:url(${card.img});">
                 <div class="container custom-event-card-body">
                   <div class="custom-event-card-body-inner">
