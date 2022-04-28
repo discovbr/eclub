@@ -75,6 +75,18 @@ fields:
     required: false
   label: Green Bar Text
   description: This text will auto-capitalize. Best with no punctuation.
+- name: savings_text_area
+  type: text
+  config:
+    required: false
+  label: Savings Text Area
+  description: For the top text area under the green bar.
+- name: membership_includes_text
+  type: text
+  config:
+    required: false
+  label: Membership Includes Text
+  description: For the text just above the three feature area.
 - name: feature_container
   type: field_group
   config: {}
