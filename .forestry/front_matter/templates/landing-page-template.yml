@@ -197,3 +197,108 @@ fields:
   type: boolean
   label: Attraction Cards On/Off
   description: Use this to toggle the attraction card area on and off.
+- name: stackable_content_area
+  type: field_group
+  config: {}
+  fields:
+  - name: stackable_content_block_one
+    type: field_group
+    config: {}
+    fields:
+    - name: stackable_content_image
+      type: file
+      config:
+        maxSize: 64
+      label: Stackable Content Image
+      description: Image for section.
+    - name: content_area_title
+      type: text
+      config:
+        required: false
+      label: Content Area Title
+    - name: content_area_description
+      type: textarea
+      default: ''
+      config:
+        required: false
+        wysiwyg: false
+        schema:
+          format: markdown
+      label: Content Area Description
+    - name: button_text
+      type: text
+      config:
+        required: false
+      label: Button Text
+    label: Stackable Content Area One
+    description: The top content block
+  - name: repeatable_stack
+    type: field_group_list
+    fields:
+    - name: stackable_section_image_left
+      type: field_group
+      config: {}
+      fields:
+      - name: stackable_content_image
+        type: file
+        config:
+          maxSize: 64
+        label: Stackable Content Image
+      - name: content_area_title
+        type: text
+        config:
+          required: false
+        label: Content Area Title
+      - name: content_area_description
+        type: textarea
+        default: ''
+        config:
+          required: false
+          wysiwyg: false
+          schema:
+            format: markdown
+        label: Content Area Description
+      - name: button_text
+        type: text
+        config:
+          required: false
+        label: Button Text
+      label: Stackable Section Image Left
+    - name: stackable_section_image_right
+      type: field_group
+      config: {}
+      fields:
+      - name: stackable_content_image
+        type: file
+        config:
+          maxSize: 64
+        label: Stackable Content Image
+      - name: content_area_title
+        type: text
+        config:
+          required: false
+        label: Content Area Title
+      - name: content_area_description
+        type: textarea
+        default: ''
+        config:
+          required: false
+          wysiwyg: false
+          schema:
+            format: markdown
+        label: Content Area Description
+      - name: button_text
+        type: text
+        config:
+          required: false
+        label: Button Text
+      label: Stackable Section Image Right
+    config:
+      min: 
+      max: 
+      labelField: 
+    label: Repeatable Stack
+    description: Duplicate this section to create two more rows.
+  label: Stackable Content Area
+  description: For the stackable content block with the left/right image and text
+    area.
