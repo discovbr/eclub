@@ -50,6 +50,30 @@ attraction_cards_on_off: true
 savings_text_area: Average member savings of over $217 per visit
 membership_includes_text: 'Branson E-Club Lifetime Membership Includes:'
 between_feature_text: What Are You Waiting For?
+stackable_content_area:
+  repeatable_stack:
+  - stackable_section_image_left:
+      stackable_content_image: images/unpublished-deals.jpg
+      content_area_title: Unlock Unpublished Prices &amp; Offers
+      content_area_description: Branson E-Club members enjoy exclusive offers from
+        our partner network. Sidestep the tourist traps and see the best that Branson
+        has to offer. Concierge services are available to schedule discounted group
+        rates and packages with unbelievable discounts. Join the club and get the
+        most out of your time in Branson.
+      button_text: Join Now
+    stackable_section_image_right:
+      stackable_content_image: images/two-for-one.jpg
+      content_area_title: Two For One Tickets
+      content_area_description: At specific locations Branson E-Club members are often
+        times eligible to receive 2 tickets for the price of 1!
+      button_text: Save Big Time
+  stackable_content_block_one:
+    stackable_content_image: images/travel-guide.jpg
+    content_area_title: Discover Branson<br>Travel Guide
+    content_area_description: This Travel Guide contains everything you need to know
+      about Branson. From show schedules and attraction operating hours to a full-color
+      map of the city, this guide is essential to any getaway in Branson.
+    button_text: Have A Look
 
 ---
 <!doctype html>
@@ -300,12 +324,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="d-md-flex flex-md-equal w-100 mobile-inverted-box">
         <div class="bg-light">
           <div class="h-100 p-4 p-md-5">
-            <div class="h2 fw-bold">Discover Branson<br>Travel Guide</div>
-            <div class="h5 text-muted">This Travel Guide contains everything you need to know about Branson. From show schedules and attraction operating hours to a full-color map of the city, this guide is essential to any getaway in Branson.</div>
-            <button type="button" class="scroll-button btn btn-lg btn-primary text-uppercase text-white mt-4 fw-bold"><i class='fa fa-ticket'></i> Have A Look</button>
+            <div class="h2 fw-bold">{{ page.stackable_content_area.stackable_content_area_one.content_area_title }}</div>
+            <div class="h5 text-muted">{{ page.stackable_content_area.stackable_content_area_one.content_area_description }}</div>
+            <button type="button" class="scroll-button btn btn-lg btn-primary text-uppercase text-white mt-4 fw-bold"><i class='fa fa-ticket'></i> {{ page.stackable_content_area.stackable_content_area_one.button_text }}</button>
           </div>
         </div>
-        <div class="bg-primary bg-image-style" data-src="images/travel-guide.jpg">
+        <div class="bg-primary bg-image-style" data-src="{{ page.stackable_content_area.stackable_content_area_one.stackable_content_image }}">
         </div>
       </div>
 
@@ -316,8 +340,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="bg-light">
           <div class="h-100 p-4 p-md-5">
             <div class="h2 fw-bold">Unlock Unpublished Prices &amp; Offers</div>
-            <div class="h5 text-muted">Branson E-Club members enjoy exclusive offers from our partner network. Sidestep the tourist traps and see the best that Branson has to offer. Concierge services are available to schedule discounted group rates and packages with unbelievable
-              discounts. Join the club and get the most out of your time in Branson.</div>
+            <div class="h5 text-muted">Branson E-Club members enjoy exclusive offers from our partner network. Sidestep the tourist traps and see the best that Branson has to offer. Concierge services are available to schedule discounted group rates and packages with unbelievable discounts. Join the club and get the most out of your time in Branson.</div>
             <button type="button" class="scroll-button btn btn-lg btn-primary text-uppercase text-white mt-4 fw-bold"><i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp;&nbsp;JOIN NOW</button>
           </div>
         </div>
