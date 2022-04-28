@@ -745,7 +745,11 @@ background-color: #0C5EA5 !important;
   box-shadow: rgba(255, 255, 255, 0.75) 1.5em 0 0 0, rgba(255, 255, 255, 0.75) 1.1em 1.1em 0 0, rgba(255, 255, 255, 0.75) 0 1.5em 0 0, rgba(255, 255, 255, 0.75) -1.1em 1.1em 0 0, rgba(255, 255, 255, 0.75) -1.5em 0 0 0, rgba(255, 255, 255, 0.75) -1.1em -1.1em 0 0, rgba(255, 255, 255, 0.75) 0 -1.5em 0 0, rgba(255, 255, 255, 0.75) 1.1em -1.1em 0 0;
 }
 
-/* Absolute Center Spinner */
+/* Loading Deals Spinner */
+
+#loadingDealsContainer {
+    text-align: center;
+}
 
 .loading-deals {
   position: initial;
