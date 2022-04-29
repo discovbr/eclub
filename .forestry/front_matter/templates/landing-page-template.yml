@@ -401,3 +401,9 @@ fields:
     min: 
     max: 
     step: 
+- name: lucky_orange_script_id
+  type: text
+  config:
+    required: false
+  label: Lucky Orange Script ID
+  description: Paste in the ID string for to replace the current lucky orange script.
