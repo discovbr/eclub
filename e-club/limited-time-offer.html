@@ -84,6 +84,15 @@ footer_content:
     880-1345</span></strong> to speak with a friendly Branson E-Club representative.
     We are local folks who would love to help with questions about this offer or to
     chat about town.
+meta_tags:
+  site_icon: "../images/favicon.png"
+  tab_title: Discover Branson E-Club
+  page_description: Discount Tickets and Lodging for Branson Missouri Shows, Attractions,
+    Hotels, Resorts, and Condominiums. Guaranteed Lowest Prices. Will match or beat
+    any price!
+  social_media_sharing_title: "Discover Branson E-Club \U0001F389"
+  page_url: https://offers.discoverbranson.com/limited-time-offer.html
+  social_media_image: "../images/background-image.jpg"
 
 ---
 <!doctype html>
@@ -94,25 +103,26 @@ footer_content:
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Primary Meta Tags -->
-  <title>Discover Branson E-Club</title>
-  <link rel="icon" href="../images/favicon.png">
-  <meta name="title" content="Discover Branson E-Club">
-  <meta name="description" content="Discount Tickets and Lodging for Branson Missouri Shows, Attractions, Hotels, Resorts, and Condominiums. Guaranteed Lowest Prices. Will match or beat any price!">
-  <meta name="url" content="https://offers.discoverbranson.com/e-club-fast.html">
+  <title>{{ page.meta_tags.tab_title }}</title>
+  <link rel="icon" href="{{ page.meta_tags.site_icon }}">
+  <meta name="title" content="{{ page.meta_tags.social_media_title }}">
+  <meta name="description" content="{{ page.meta_tags.page_description }}">
+  <meta name="url" content="{{ page.meta_tags.page_url }}">
   
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://offers.discoverbranson.com/e-club-fast.html">
-  <meta property="og:title" content="Discover Branson E-Club 🎉">
-  <meta property="og:description" content="Discount Tickets and Lodging for Branson Missouri Shows, Attractions, Hotels, Resorts, and Condominiums. Guaranteed Lowest Prices. Will match or beat any price!">
-  <meta property="og:image" content="https://discoverbranson.com/wp-content/uploads/2018/11/tiwtter-card.jpg">
+  <meta property="og:image" content="{{ page.meta_tags.social_media_sharing_image }}">
+  <meta property="og:title" content="{{ page.meta_tags.social_media_title }}">
+  <meta property="og:description" content="{{ page.meta_tags.page_description }}">
+  <meta property="og:url" content="{{ page.meta_tags.page_url }}">
+  
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://offers.discoverbranson.com/e-club-fast.html">
-  <meta property="twitter:title" content="Discover Branson E-Club 🎉">
-  <meta property="twitter:description" content="Discount Tickets and Lodging for Branson Missouri Shows, Attractions, Hotels, Resorts, and Condominiums. Guaranteed Lowest Prices. Will match or beat any price!">
-  <meta property="twitter:image" content="https://discoverbranson.com/wp-content/uploads/2018/11/tiwtter-card.jpg">
+  <meta property="twitter:image" content="{{ page.meta_tags.social_media_sharing_image }}">
+  <meta property="twitter:title" content="{{ page.meta_tags.social_media_title }}">
+  <meta property="twitter:description" content="{{ page.meta_tags.page_description }}">
+  <meta property="twitter:url" content="{{ page.meta_tags.page_url }}">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
