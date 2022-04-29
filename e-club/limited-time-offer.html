@@ -476,7 +476,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </script>
 
  <script>   
-   var cardsArr = [{% for card in page.attraction_cards %}['{{ card.card_image }}','{{ card.title }}','{{ card.price }}','{{ card.hours }}','{{ card.age }}']{% endfor %}];
+   var cardsArr = [{% for card in page.attraction_cards %}['{{ card.card_image }}','{{ card.title }}','{{ card.price }}','{{ card.hours }}','{{ card.age }}'],{% endfor %}];
     // Google Analytics
     function google() {
       (function(w, d, s, l, i) {
