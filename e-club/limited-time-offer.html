@@ -583,6 +583,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       if (typeof(cardEle) != 'undefined' && cardEle != null) {
         setTimeout(function(){
           getCards();
+          setTimeout( function() {
+            document.querySelectorAll(".event-card-custom").forEach(button =>             {
+               button.addEventListener('click', function handleClick(event) {
+                 scrollFunction();
+               });
+            });
+          }, 1000);
         }, 4000);
       } 
     });
@@ -592,13 +599,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         scrollFunction();
       });
     });
-    setTimeout( function() {
-        document.querySelectorAll(".event-card-custom").forEach(button => {
-          button.addEventListener('click', function handleClick(event) {
-            scrollFunction();
-          });
-        });
-      }, 1000);
+    
     
     // Message Handler 
     const message_success = document.getElementById('message-success');
