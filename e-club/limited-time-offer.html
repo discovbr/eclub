@@ -94,6 +94,8 @@ meta_tags:
   page_url: https://offers.discoverbranson.com/limited-time-offer.html
   social_media_image: "../images/background-image.jpg"
 lucky_orange_script_id: b6549301
+bbb_logo: "../images/bbb-a.png"
+bbb_toggle: true
 
 ---
 <!doctype html>
@@ -398,9 +400,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
    {% endif %}
+   {% if page.bbb_toggle %}
     <div class="container-fluid text-center pt-0 pb-3 mb-4 d-flex flex-column justify-content-evenly align-items-center">
-      <img class="bbb-a-logo" data-src="/images/bbb-a.png" alt="A+ BBB logo" />
+      <img class="bbb-a-logo" data-src="{{ page.bbb_logo }}" alt="A+ BBB logo" />
    </div>
+   {% endif %}
    <div id="pageFooter" class="footer pt-5 pb-5">
     <div class="footer-inner">
       <p>
