@@ -1015,8 +1015,11 @@ background-color: #0C5EA5 !important;
     width: 100%;
   }
 }
-@media screen and (max-width: 481px) and (min-width: 350px) {
+@media screen and (max-width: 481px) and (min-width: 400px) {
   #mainBodyTop .h3 { padding: 0 55px; } 
+}
+@media screen and (max-width: 400px) and (min-width: 350px) {
+  #mainBodyTop .h3 { padding: 0 35px; } 
 }
 @media screen and (max-width: 450px) {
   .main-left-container {
