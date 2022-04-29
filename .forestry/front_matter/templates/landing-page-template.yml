@@ -2,6 +2,52 @@
 label: Landing Page Template
 hide_body: false
 fields:
+- name: meta_tags
+  type: field_group
+  config: {}
+  fields:
+  - name: site_icon
+    type: file
+    config:
+      maxSize: 64
+    label: Site Icon
+    description: This will replace the favicon in your page's tab and bookmarks.
+  - name: tab_title
+    type: text
+    config:
+      required: false
+    label: Tab/SEO Title
+    description: This title will be displayed by search engines and the tab.
+  - name: social_media_sharing_title
+    type: text
+    config:
+      required: false
+    label: Social Media Sharing Title
+  - name: page_description
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Page Description
+    description: To be displayed by search engines and social media.
+  - name: page_url
+    type: text
+    config:
+      required: false
+    label: Page URL
+    description: To be displayed by search engines and social media.
+  - name: social_media_image
+    type: file
+    config:
+      maxSize: 64
+    label: Social Media Sharing Image
+    description: The image that will pull into shared posts.
+  label: Social Media and Meta Tags
+  description: To change the information that displays on social media, search engines,
+    and your page's tab title/icon.
 - name: site_logo
   type: file
   config:
