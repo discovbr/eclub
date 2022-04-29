@@ -157,6 +157,7 @@ attraction_cards:
   price: "$20.50 – /$63.55"
   hours: 2 Hours
   age: Ages 13+
+attraction_card_button_text: See More Deals
 
 ---
 <!doctype html>
@@ -460,7 +461,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
     </div>
-    <div class="see-deals-bottom-button"><button type="button" class="scroll-button btn btn-primary text-uppercase">See More Deals</button></div>
+    <div class="see-deals-bottom-button"><button type="button" class="scroll-button btn btn-primary text-uppercase">{{ page.attraction_card_button_text }}</button></div>
    {% endif %}
    {% if page.bbb_toggle %}
     <div class="container-fluid text-center pt-0 pb-3 mb-4 d-flex flex-column justify-content-evenly align-items-center">
