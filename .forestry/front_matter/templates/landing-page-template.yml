@@ -351,6 +351,12 @@ fields:
   label: Stackable Content Area
   description: For the stackable content block with the left/right image and text
     area.
+- name: attraction_card_title
+  type: text
+  config:
+    required: false
+  label: Attraction Card Title
+  description: The title area for the attraction cards
 - name: attraction_cards
   type: field_group_list
   fields:
