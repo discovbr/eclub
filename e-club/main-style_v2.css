@@ -672,6 +672,9 @@ background-color: #0C5EA5 !important;
 }
 
 /* Random */
+.bbb-a-logo {
+  width: 200px; 
+}
 #mainBodyTop {
   position: relative;
   z-index: 1;
