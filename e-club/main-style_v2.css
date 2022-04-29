@@ -677,6 +677,14 @@ background-color: #0C5EA5 !important;
   z-index: 1;
   background: #fff;
 }
+#mainBodyTop h4 {
+  margin-bottom: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #254666;
+  font-weight: 900;
+  font-size: 1.3rem; 
+}
 .mobile-only-list { 
   display: none; 
   color: #f7cb47;
