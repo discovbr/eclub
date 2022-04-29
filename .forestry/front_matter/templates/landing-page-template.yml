@@ -351,6 +351,39 @@ fields:
   label: Stackable Content Area
   description: For the stackable content block with the left/right image and text
     area.
+- name: attraction_cards
+  type: field_group_list
+  fields:
+  - name: card_image
+    type: file
+    config:
+      maxSize: 64
+    label: Card Image
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+  - name: price
+    type: text
+    config:
+      required: false
+    label: Price
+  - name: hours
+    type: text
+    config:
+      required: false
+    label: Hours
+  - name: age
+    type: text
+    config:
+      required: false
+    label: Age
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Attraction Cards
 - name: attraction_cards_on_off
   type: boolean
   label: Attraction Cards On/Off
