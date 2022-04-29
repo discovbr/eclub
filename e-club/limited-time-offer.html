@@ -76,6 +76,14 @@ stackable_content_area:
     button_text: Have A Look
 facebook_pixel_id: 1033924800538096
 mobile_background_image: "../images/background-image-mobile.webp"
+footer_content:
+  email: eclub@discoverbranson.com
+  address: 1105 W. 76 Country Blvd.<br>Branson, MO 65616
+  copyright_year: 2022
+  footer_top_text_blurb: Give us a call at <strong><span class="convert-phone">(888)
+    880-1345</span></strong> to speak with a friendly Branson E-Club representative.
+    We are local folks who would love to help with questions about this offer or to
+    chat about town.
 
 ---
 <!doctype html>
@@ -385,16 +393,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
    <div id="pageFooter" class="footer pt-5 pb-5">
     <div class="footer-inner">
       <p>
-        Give us a call at <strong><span class="convert-phone">1-888-400-8804</span></strong> to speak with a friendly Branson E-Club representative. We are local folks who would love to help with questions about this offer or to chat about town.
+        {{ page.footer_content.footer_top_text_blurb }}
       </p>
-      <p><em>Copyright © 2022 by Discover Branson</em></p>
+      <p><em>Copyright © {{ page.footer_content.copyright_year }} by Discover Branson</em></p>
       <div class="footer-bottom-inline">
         <div class="footer-bottom-inline-container">
           <p class="footer-bottom-text">
-            <strong>ADDRESS:</strong><br/>1105 W. 76 Country Blvd.<br/>Branson, MO 65616
+            <strong>ADDRESS:</strong><br/>{{ page.footer_content.address }}
           </p>
           <p class="footer-bottom-text">
-            <strong>EMAIL:</strong><br/>eclub@discoverbranson.com
+            <strong>EMAIL:</strong><br/>{{ page.footer_content.email }}
           </p>
         </div>
 
