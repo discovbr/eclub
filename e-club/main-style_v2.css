@@ -641,6 +641,10 @@ background-color: #0C5EA5 !important;
     font-size: .8rem;
     line-height: .8rem;
 }
+.see-deals-bottom-button {
+    text-align: center;
+    margin-bottom: 30px;
+}
 
 /* Footer */
 
