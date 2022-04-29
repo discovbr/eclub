@@ -66,10 +66,6 @@
 .my-slider {
     cursor: grab;
 }
-#tns1 > .tns-item {
-    min-width: 170px;
-}
-
 .bg-primary {
     background-color: #d2d2d2!important;
 }
