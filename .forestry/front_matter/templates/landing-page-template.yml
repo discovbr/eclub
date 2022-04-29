@@ -309,6 +309,41 @@ fields:
   type: boolean
   label: Attraction Cards On/Off
   description: Use this to toggle the attraction card area on and off.
+- name: footer_content
+  type: field_group
+  config: {}
+  fields:
+  - name: footer_top_text_blurb
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Footer Top Text Blurb
+  - name: address
+    type: text
+    config:
+      required: false
+    label: Address
+  - name: email
+    type: text
+    config:
+      required: false
+    label: Email
+  - name: copyright_year
+    type: number
+    label: Copyright Year
+    description: ''
+    default: 0
+    required: true
+    config:
+      min: 
+      max: 
+      step: 
+  label: Footer Content
+  description: For editing parts of your footer.
 - name: facebook_pixel_id
   type: number
   label: Facebook Pixel ID
