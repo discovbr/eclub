@@ -1015,6 +1015,9 @@ background-color: #0C5EA5 !important;
     width: 100%;
   }
 }
+@media screen and (max-width: 481px and min-width: 350px) {
+  #mainBodyTop h4 { padding: 0 55px; } 
+}
 @media screen and (max-width: 450px) {
   .main-left-container {
     min-height: 280px;
