@@ -384,6 +384,11 @@ fields:
     max: 
     labelField: 
   label: Attraction Cards
+- name: attraction_card_button_text
+  type: text
+  config:
+    required: false
+  label: Attraction Card Button Text
 - name: attraction_cards_on_off
   type: boolean
   label: Attraction Cards On/Off
