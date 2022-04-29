@@ -355,6 +355,16 @@ fields:
   type: boolean
   label: Attraction Cards On/Off
   description: Use this to toggle the attraction card area on and off.
+- name: bbb_logo
+  type: file
+  config:
+    maxSize: 64
+  label: Better Business Bureau Logo
+  description: To replace the Better Business Bureau logo at the bottom of the page.
+- name: bbb_toggle
+  type: boolean
+  label: Better Business Bureau On/Off Toggle
+  description: Turn the Better Business Bureau logo on or off.
 - name: footer_content
   type: field_group
   config: {}
