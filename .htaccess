@@ -1,5 +1,4 @@
-RewriteEngine On
-
-RewriteCond ${REQUEST_FILENAME} !-f  
-RewriteCond ${REQUEST_FILENAME} !-d
-RewriteRule (\w+) /e-club/limited-time-offer [QSA,L]
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^.*$ /e-club/limited-time-offer [QSA,L]
