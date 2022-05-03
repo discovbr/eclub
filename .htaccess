@@ -2,4 +2,4 @@ RewriteEngine On
 
 RewriteCond ${REQUEST_FILENAME} !-f  
 RewriteCond ${REQUEST_FILENAME} !-d
-RewriteRule (\w+) /pages/index.php?page=$1 [L]
+RewriteRule (\w+) /e-club/limited-time-offer [QSA,L]
