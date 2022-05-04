@@ -461,3 +461,13 @@ fields:
     required: false
   label: Lucky Orange Script ID
   description: Paste in the ID string for to replace the current lucky orange script.
+- name: page_scripts
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Page Scripts
+  description: Add extra scripts for the page here.
