@@ -699,9 +699,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       document.querySelector(".modal").style.display = "inherit";
       if (type === 'success') {
         message_success.style.display = "inherit";
-        gtag('event', 'lead', {
-          'event_category' : 'engagement'
-        });
+        gtag('event', 'lead');
         let newInterval = setInterval(function() {
           redirectSeconds--;
           document.getElementById("redirectSuccessTimer").innerText = redirectSeconds;
