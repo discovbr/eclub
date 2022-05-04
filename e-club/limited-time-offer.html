@@ -701,6 +701,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         window.dataLayer.push({
             event: 'lead'
         });
+        fbq('track', 'lead');
         message_success.style.display = "inherit";
         let newInterval = setInterval(function() {
           redirectSeconds--;
