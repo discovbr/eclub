@@ -707,9 +707,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     function messageHandle(type) {
       document.querySelector(".modal").style.display = "inherit";
       if (type === 'success') {
-        window.dataLayer.push({
-            event: 'lead'
-        });
+        gtag('event', 'lead');
         fbq('track', 'lead');
         message_success.style.display = "inherit";
         let newInterval = setInterval(function() {
