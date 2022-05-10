@@ -159,7 +159,9 @@ attraction_cards:
   age: Ages 13+
 attraction_card_button_text: See More Deals
 attraction_card_title: Some Of Our Member Ticket Deals
-page_scripts: <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+page_scripts: '<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+
+  '
 
 ---
 <!doctype html>
@@ -225,15 +227,6 @@ page_scripts: <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.
   
   <!-- WhatConverts -->
   <script src="//scripts.iconnode.com/91158.js"></script>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NYP21MH81P"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-NYP21MH81P');
-  </script>
 </head>
 
 <body>
@@ -523,6 +516,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
   
   {{ page.page_scripts }}
+  
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NYP21MH81P"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-NYP21MH81P');
+  </script>
   
         <script>
 //         Lazy Load Images
