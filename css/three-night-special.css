@@ -403,7 +403,7 @@ i.fa.fa-close {
     padding: 7px 0;
     position: relative;
 }
-#mainForm .card-text {
+#mainForm .card-text:before {
   content: '';
   position: absolute;
   left: 50%;
