@@ -90,6 +90,7 @@
 }
 #topTitleText {
   letter-spacing: 2px;
+  font-size: calc(1.4rem + 3.5vw);
 }
 #mobileViewOverlay {
   display: none;
