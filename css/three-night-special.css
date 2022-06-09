@@ -397,13 +397,13 @@ i.fa.fa-close {
     border: 2px solid #254666;
     color: #fff;
 }
-.card-text:last-child {
+#mainForm .card-text {
     background: #46b767;
     color: #fff;
     padding: 7px 0;
     position: relative;
 }
-.card-text:last-child:before {
+#mainForm .card-text {
   content: '';
   position: absolute;
   left: 50%;
