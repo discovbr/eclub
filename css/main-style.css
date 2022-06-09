@@ -705,6 +705,7 @@ background-color: #0C5EA5 !important;
     line-height: 34px;
     font-weight: bold;
     letter-spacing: 1.5px;
+    text-transform: uppercase;
 }
 
 /* Absolute Center Spinner */
