@@ -338,6 +338,7 @@ i.fa.fa-sign-in, i.fa.fa-dollar {
 .form-card {
   max-width: 400px;
   border: none;
+  min-height: 345px;
 }
 #noCardReq {
     width: 24px;
