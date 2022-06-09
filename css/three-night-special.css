@@ -340,6 +340,12 @@ i.fa.fa-sign-in, i.fa.fa-dollar {
   border: none;
   min-height: 360px;
 }
+.three-card-buttons {
+  position: absolute;
+  bottom: 15px;
+  margin: auto;
+  left: 0; 
+}
 #noCardReq {
     width: 24px;
     margin: 0 5px 0 0;
