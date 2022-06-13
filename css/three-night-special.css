@@ -1006,6 +1006,10 @@ background-color: #0C5EA5 !important;
   .mobile-only-list { display: inherit; }
   #header-extra-bullets { display: none; }
 }
+@media screen and (max-width: 575px) {
+ .three-card-buttons { position: relative; margin: 15px auto; left: 0; } 
+  .form-card { min-height: auto; }
+}
 @media screen and (max-width: 480px) {
   .event-card-custom:nth-child(2n+1) {
     clear: none;
