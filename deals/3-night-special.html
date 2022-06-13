@@ -848,7 +848,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         var diffMi=Math.floor(diffMS/60);
         diffMS=diffMS-diffMi*60;
         var diffS=Math.floor(diffMS);
-        var result= "<div id='timerHours'>" +((diffHr<10)?"0"+diffHr:diffHr) + "</div>;
+        var result= "<div id='timerHours'>" +((diffHr<10)?"0"+diffHr:diffHr) + "</div>";
         result+=":<div id='timerMin'>"+((diffMi<10)?"0"+diffMi:diffMi) + "</div>";
         result+=":<div id='timerSec'>"+((diffS<10)?"0"+diffS:diffS) + "</div>";
         display.innerHTML=result;
