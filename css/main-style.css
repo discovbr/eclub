@@ -337,6 +337,16 @@ i.fa.fa-sign-in, i.fa.fa-dollar {
 .form-card {
   max-width: 400px;
   border: none;
+  min-height: 100%;
+}
+#threeFeatureSection .card-body .form-container {
+    margin-bottom: 50px;
+}
+.three-card-buttons {
+  position: absolute;
+  bottom: 15px;
+  margin: auto;
+  left: 0; 
 }
 #noCardReq {
     width: 24px;
@@ -991,6 +1001,10 @@ background-color: #0C5EA5 !important;
 @media screen and (max-width: 610px) {
   .mobile-only-list { display: inherit; }
   #header-extra-bullets { display: none; }
+}
+@media screen and (max-width: 575px) {
+  .three-card-buttons { position: relative; margin: 15px auto; left: 0; bottom: 0; } 
+  .form-card { min-height: auto; }
 }
 @media screen and (max-width: 480px) {
   .event-card-custom:nth-child(2n+1) {
