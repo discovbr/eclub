@@ -714,6 +714,11 @@ background-color: #0C5EA5 !important;
     font-weight: bold;
     letter-spacing: 1.5px;
     text-transform: uppercase;
+    list-style: none;
+    padding-left: 8px;
+}
+#header-extra-bullets li:before {
+    content: "\2713 ";
 }
 
 /* Absolute Center Spinner */
