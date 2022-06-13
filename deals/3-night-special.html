@@ -541,7 +541,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
  <script>   
    var cardsArr = [{% for card in page.attraction_cards %}[`{{ card.card_image }}`,`{{ card.title }}`,`{{ card.price }}`,`{{ card.hours }}`,`{{ card.age }}`],{% endfor %}];
     // Google Analytics
-    function google() {
+    /*function google() {
       (function(w, d, s, l, i) {
         w[l] = w[l] || [];
         w[l].push({
@@ -556,7 +556,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
         f.parentNode.insertBefore(j, f);
       })(window, document, 'script', 'dataLayer', 'GTM-5XNX7Z8');
-    };
+    };*/
 
     // Facebook Pixel
     function facebook() {
@@ -676,7 +676,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       urlParams = new URLSearchParams(queryString);
       phoneConvert();
       autoPhoneInputConvert();
-      google();
+      //google();
       facebook();
       formHeight = document.getElementById('mainForm').clientHeight;
       var cardEle =  document.getElementById('cardsInsert');
