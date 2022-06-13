@@ -338,7 +338,10 @@ i.fa.fa-sign-in, i.fa.fa-dollar {
 .form-card {
   max-width: 400px;
   border: none;
-  min-height: 360px;
+  min-height: 100%;
+}
+.card-body .form-container {
+    margin-bottom: 50px;
 }
 .three-card-buttons {
   position: absolute;
@@ -580,7 +583,7 @@ a {
 .event-card-custom:hover .custom-event-button {
 background-color: #0C5EA5 !important;
 }
-.custom-event-card-body {
+.custom-event-{
   border-radius: 10px;
   position: absolute;
   height: 100%;
