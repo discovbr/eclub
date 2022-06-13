@@ -405,13 +405,13 @@ i.fa.fa-close {
     border: 2px solid #254666;
     color: #fff;
 }
-.card-text:last-child {
+#mainForm .card-text:last-child {
     background: #46b767;
     color: #fff;
     padding: 7px 0;
     position: relative;
 }
-.card-text:last-child:before {
+#mainForm .card-text:last-child:before {
   content: '';
   position: absolute;
   left: 50%;
