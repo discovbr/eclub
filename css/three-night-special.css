@@ -340,7 +340,7 @@ i.fa.fa-sign-in, i.fa.fa-dollar {
   border: none;
   min-height: 100%;
 }
-.card-body .form-container {
+#threeFeatureSection .card-body .form-container {
     margin-bottom: 50px;
 }
 .three-card-buttons {
