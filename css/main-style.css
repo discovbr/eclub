@@ -953,7 +953,7 @@ background-color: #0C5EA5 !important;
     margin: auto;
   }
   a.d-flex.align-items-center.text-dark.phone {
-    margin: 5px auto;
+    display: none !important;
   }
   #mobileViewOverlay {
     display: inherit;
