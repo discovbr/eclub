@@ -862,8 +862,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
   
   <script>
-    let h1 = document.querySelector('#topTitleText'); // select the first H1 element on the page
-	h1.textContent = "Branson<br>E-Club"; // set the text content of the H1 element to "Hello World"
+    
+ // Get the value of the h1 parameter from the query string
+const urlParams = new URLSearchParams(window.location.search);
+const h1Value = urlParams.get('h1');
+
+// Find the first H1 element on the page
+const h1 = document.querySelector('#topTitleText');
+
+// Set the text content of the H1 element to the value of h1Value if it is set, otherwise set it to the default text
+if (h1Value) {
+  h1.textContent = decodeURIComponent(h1Value);
+} else {
+  h1.innerHTML = "Branson<br>E-Club";
+}   
+    
+
 
   </script>  
   
