@@ -869,9 +869,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
   
   <script>
- // Get the value of the h1 parameter from the query string
+
+    
+// Get the value of the h1 parameter from the query string
 const urlParams2 = new URLSearchParams(window.location.search);
-const h1Value = urlParams2.get('h1');
+let h1Value = urlParams2.get('h1');
+
+// Replace all instances of "num" with "#" in the h1Value string
+h1Value = h1Value ? h1Value.replaceAll('num', '#') : null;
 
 // Find the first H1 element on the page
 const h1 = document.querySelector('#topTitleText');
@@ -881,7 +886,7 @@ if (h1Value) {
   h1.textContent = decodeURIComponent(h1Value);
 } else {
   h1.innerHTML = "Branson<br>E-Club!";
-}   
+}    
     
 
 
