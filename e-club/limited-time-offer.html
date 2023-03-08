@@ -231,7 +231,7 @@ page_scripts: |-
        }
       
 .display-1 {
-  font-size: 4rem;
+  font-size: 3rem;
 }
       
     }
@@ -877,7 +877,8 @@ let h1Value = urlParams2.get('h1');
 
 // Replace all instances of "num" with "#" in the h1Value string
 h1Value = h1Value ? h1Value.replaceAll('num', '#') : null;
-
+h1Value = h1Value ? h1Value.replaceAll('and', '&') : null;
+    
 // Find the first H1 element on the page
 const h1 = document.querySelector('#topTitleText');
 
