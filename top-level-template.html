@@ -760,6 +760,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       const content = urlParams.get('content');
       const keyword = urlParams.get('keyword');
       const device = urlParams.get('device');
+      const gclid = urlParams.get('gclid');
       //  Error 
       const fail = urlParams.has('fail') ? true : false;
 
@@ -775,7 +776,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         adgroup: adgroup || '',
         content: content || '',
         keyword: keyword || '',
-        device: getDeviceType()
+        device: getDeviceType(),
+        gclid: gclid || ''
       });
       params = params.toString();
       paramStr = redirectUrlBuild(params);
